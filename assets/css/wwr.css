@@ -1,0 +1,38 @@
+.mtc_wwr__prefooter{font-size: 12px; display: flex; flex-direction: row;}
+.mtc_wwr__prefooter > div{flex-grow: 1}
+.mtc_wwr__prefooter > div:first-child{text-align: left}
+.mtc_wwr__prefooter > div:last-child{text-align: right}
+
+.mtc_wwr__footer {display: flex; flex-direction: row; justify-content: space-between; align-items: center; align-content: center; padding:25px 0; margin: 15px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee}
+.mtc_wwr__footer:last-child {padding-bottom:0; margin-bottom:0; border-bottom: none}
+.mtc_wwr__footer__logo{flex-grow: 2; text-align: center}
+.mtc_wwr__footer__logo img{width: 75px}
+.mtc_wwr__footer__pagination{flex-grow: 1;}
+.mtc_wwr__footer__pagination--right{text-align: right}
+.mtc_wwr__footer__pagination a{padding:15px; border:1px solid #ccc; color:#333; border-radius: 3px; box-shadow:none !important; text-decoration: none}
+.mtc_wwr__footer__pagination a:hover{background: #333; border-color:#333; color:#fff !important}
+.mtc_wwr__footer__pagination a:focus{outline: none !important}
+
+.wwr-item{padding-bottom: 25px; margin-bottom: 15px; border-bottom: 1px solid #ccc;}
+.wwr-item:last-child{border-bottom: none; padding-bottom:15px}
+
+.wwr-item .heading{display: flex; flex-direction: row; margin-bottom: 10px}
+.wwr-item .heading .logo{margin-right: 15px; align-self:center}
+.wwr-item .heading .logo img{border-radius: 50%; max-height: 50px; max-width: 50px}
+
+.wwr-item .heading .details{line-height: 1.5em; align-self:center}
+.wwr-item .heading .details .job-title{font-weight:bold}
+
+.wwr-item .more-information{margin-top: 15px; display: flex; flex-direction: row;}
+.wwr-item .more-information .wwr-time{opacity:0.75; flex-grow: 1; font-size: 12px}
+.wwr-item .more-information .readmore{text-align: right; flex-grow: 1}
+
+.wwr-btn{padding: 6px 10px; font-size: 12px; background:#333; color: #fff; outline: none; text-decoration: none; border: 1px solid #333; box-shadow: none !important; border-radius: 3px}
+.wwr-btn:hover{color:#333; background: #fff;}
+
+.wwr-disabled{pointer-events: none; cursor: not-allowed; opacity: 0.65;}
+
+
+/****************************************/
+.m-r-5{margin-right: 5px}
+.m-r-10{margin-right: 10px}
