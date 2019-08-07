@@ -12,6 +12,9 @@ Displays remote job openings provided by weworkremotely.com
 == Description ==
 Displays remote job openings provided by weworkremotely.com\'s RSS feed
 
+### Acknowlegements
+This tool uses the [WeWorkRemotely RSS Feed](https://weworkremotely.com/remote-jobs.rss)
+
 == Installation ==
 1. In the WordPress Dashboard go to Plugins, then click the Add Plugins button and search the WordPress Plugins Directory for \'WeWorkRemotely Job Listings\'.
 2. Activate the plugin through the ‘Plugins’ screen in WordPress.
