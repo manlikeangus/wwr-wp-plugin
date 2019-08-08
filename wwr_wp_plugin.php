@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WeWorkRemotely Job Listings
+Plugin Name: Job Listings from WeWorkRemotely
 Plugin URI: https://www.angusokereafor.com/fun-projects/wwr-plugin/
 Description: Displays remote job openings provided by weworkremotely.com
 Version: 1.0.0
