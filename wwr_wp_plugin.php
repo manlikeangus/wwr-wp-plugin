@@ -85,22 +85,18 @@ class mtc_weworkremotely extends WP_Widget {
 
     public function getdata(){
         $url = 'https://weworkremotely.com/remote-jobs.rss';
-        $fileContents= file_get_contents($url);
-        $fileContents = str_replace(array("\n", "\r", "\t"), '', $fileContents);
-        $fileContents = trim(str_replace('"', "'", $fileContents));
-        $simpleXml = simplexml_load_string($fileContents);
-        $data = json_encode($simpleXml);
 
         try{
-            $fileContents= file_get_contents($url);
+            $fileContents = wp_remote_retrieve_body(wp_remote_get($url));
             $fileContents = str_replace(array("\n", "\r", "\t"), '', $fileContents);
             $fileContents = trim(str_replace('"', "'", $fileContents));
             $simpleXml = simplexml_load_string($fileContents);
+            
             $data = json_encode($simpleXml);
             $data = json_decode($data, true);
-            $data = json_encode(array("status"=>"successful", "message" => "Data successfully retrieved", "data"=>array_values($data)));
+            $data = json_encode(array("status" => "successful", "message" => "Data successfully retrieved", "data" => array_values($data)));
         }catch(Exception $ex){
-            $data = json_encode(array("status" => "error", "message" => $err));
+            $data = json_encode(array("status" => "error", "message" => $ex->getMessage()));
         }
 
         wp_enqueue_script('wwr_js', plugins_url('assets/js/wwr.js?t='.time(), MTC_WWR_PLUGIN_FILE), array('jquery'), '1.0.0', true );

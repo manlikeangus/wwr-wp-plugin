@@ -1,4 +1,4 @@
-=== WeWorkRemotely Job Listings ===
+=== Job Listings from WeWorkRemotely ===
 Contributors: angusokereafor
 Tags: remote work, remote jobs, remote, jobs, weworkremotely, job listings, job listing
 Requires at least: 4.7
