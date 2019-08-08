@@ -99,7 +99,7 @@ class mtc_weworkremotely extends WP_Widget {
             $data = json_encode(array("status" => "error", "message" => $ex->getMessage()));
         }
 
-        wp_enqueue_script('wwr_js', plugins_url('assets/js/wwr.js?t='.time(), MTC_WWR_PLUGIN_FILE), array('jquery'), '1.0.0', true );
+        wp_enqueue_script('wwr_js', plugins_url('assets/js/wwr.js', MTC_WWR_PLUGIN_FILE), array('jquery'), '1.0.0', true );
         $reshuffled_data = array('l10n_print_after' => 'wwr_data = ' . $data . ';');
         wp_localize_script( 'wwr_js', 'wwr_filler_data', $reshuffled_data);
     }
